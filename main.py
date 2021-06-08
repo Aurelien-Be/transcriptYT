@@ -10,7 +10,7 @@ app = Flask(__name__)
 def my_home():
     return render_template('index.html')
   
-@app.route('/submit', methods=['POST','GET'])
+@app.route('/submit', methods=['GET','POST'])
 def submit():
   if request.method == 'POST':
         ytlink = request.form['yt link']

@@ -19,3 +19,5 @@ def submit():
         formatter = TextFormatter()
         text_formatted = formatter.format_transcript(Transcriptions)
         return text_formatted
+    else:
+        pass 

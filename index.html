@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<body>
+		<title>Youtube transcription</title>
+		<h1>Download your transcription</h1>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<form action="submit" method='POST'>
+			<label for="ytlink"><strong>YT id of the video:</label></strong>
+			<input type="text" id="yt link" name="yt link">
+			<br>
+			<br>
+			<text>
+				The 'yt id' is the part of the url after "https://www.youtube.com/watch?v=" or after "https://youtu.be/"
+			</text>
+			<br>
+			<br>
+			<label for="language"><strong>Language:</label></strong>
+			<input type="text" id="lang" name="lang">
+			<br>
+			<br>
+			<input type="submit" value="Click here to see your transcription", name='submit'>
+		</form>
+	</body>
+</html>
 
-<h1>Download your transcription</h1>
 
-<form action="submit" method='POST'>
-  <label for="ytlink">YT id:</label>
-  <input type="text" id="yt link" name="yt link"><br><br>
-  <label for="language">Language:</label>
-  <input type="text" id="lang" name="lang"><br><br>
-  <input type="submit" value="Execute External Python script", name='submit'>
-</form>
 
-<p>Click the "Submit" to see your transcription.</p>
 
 </body>
 </html>

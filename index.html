@@ -5,11 +5,12 @@
 		<h1>Download your transcription</h1>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style1.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<form action="submit" method='POST','GET'>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<form action="/submit" method='POST' enctype="multipart/form-data">
 			<label for="ytlink"><strong>YT id of the video:</label></strong>
-			<input type="text" id="yt link" name="yt link">
+			<input class="input-group input-group-sm mb-3" style="width:170px" type="text" id="yt link" name="yt link">
 			<br>
 			<br>
 			<text>
@@ -18,16 +19,13 @@
 			<br>
 			<br>
 			<label for="language"><strong>Language:</label></strong>
-			<input type="text" id="lang" name="lang">
+			<input class="input-group input-group-sm mb-3" style="width:170px" type="text" id="lang" name="lang">
 			<br>
 			<br>
-			<input type="submit" value="Click here to see your transcription", name='submit'>
+			<input class= "btn btn-secondary btn-lg" type="submit" value="Click here to see your transcription", name='submit'>
 		</form>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 	</body>
 </html>
 
-
-
-
-</body>
-</html>

@@ -12,10 +12,18 @@ def my_home():
   
 @app.route('/submit', methods=['POST'])
 def submit():
-        ytlink = request.form['yt link']
-        lang = request.form['lang']
-        Transcriptions = YouTubeTranscriptApi.get_transcript(ytlink, languages=[lang])
-        formatter = TextFormatter()
-        text_formatted = formatter.format_transcript(Transcriptions)
-        return text_formatted
+    if request.method == ['Post']:
+       ytlink = request.form['yt link']
+       lang = request.form['lang']
+       Transcriptions = YouTubeTranscriptApi.get_transcript(ytlink, languages=[lang])
+       formatter = TextFormatter()
+       text_formatted = formatter.format_transcript(Transcriptions)
+       return text_formatted
+    if request.method == ['GET']:
+       ytlink = request.args.get['yt link']
+       lang = request.args.get['lang']
+       Transcriptions = YouTubeTranscriptApi.get_transcript(ytlink, languages=[lang])
+       formatter = TextFormatter()
+       text_formatted = formatter.format_transcript(Transcriptions)
+       return text_formatted
 
